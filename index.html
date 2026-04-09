@@ -173,6 +173,24 @@
             transform: scale(1.05);
         }
         
+        /* Дополнительная мелкая ссылка под третьей работой */
+        .extra-link {
+            margin-top: 15px;
+            font-size: 0.75rem;
+            text-align: center;
+            border-top: 1px dashed rgba(255,255,255,0.2);
+            padding-top: 12px;
+        }
+        .extra-link a {
+            color: #feca57;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .extra-link a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+        
         /* Футер */
         .footer {
             text-align: center;
@@ -258,8 +276,8 @@
                 </div>
             </a>
             
-            <!-- Практическая работа №3 -->
-            <a href="pr3_game/index.html" class="work-card card-3" target="_blank">
+            <!-- Практическая работа №3 + мелкая ссылка на работу 4 (подробная инструкция) -->
+            <div class="work-card card-3" style="cursor: default;">
                 <div class="card-icon">🎮</div>
                 <h2>Практическая работа №3</h2>
                 <div class="badge">🕹️ Игра | 🎨 Canvas</div>
@@ -270,7 +288,12 @@
                     <span class="tech">Collision Detection</span>
                     <span class="tech">Game Loop</span>
                 </div>
-            </a>
+                <!-- Ссылка на подробную версию -->
+                <div class="extra-link">
+                    📘 <strong>Работа №4 </strong> — та же игра, но с пошаговыми пояснениями каждой строчки кода<br>
+                    <a href="pr4_game_detail/index.html" target="_blank">🔗 Открыть подробную версию →</a>
+                </div>
+            </div>
         </div>
         
         <div class="info-section">
